@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "mathcalc_backend": {
+      "main": "src/mathcalc_backend/main.mo",
+      "type": "motoko"
+    },
+    "mathcalc_frontend": {
+      "dependencies": [
+        "mathcalc_backend"
+      ],
+      "source": [
+        "src/mathcalc_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
